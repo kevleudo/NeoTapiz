@@ -1,3 +1,4 @@
+
 body {
     margin: 0;
     padding: 0;
@@ -103,7 +104,7 @@ nav a:hover {
         font-size: 8px;
     }
 
-    nav {}
+    
 }
 
 .tarjeta-principal {
@@ -305,7 +306,7 @@ figcaption {
   position: absolute;
   top: 55%;               /* 🔹 Debajo de la frase */
   left: 5%;               /* 🔹 Alineada con el texto */
-  bakground-color: rgba(0, 0, 0, 0.6); /* Fondo oscuro semitransparente */
+
   color: white;
   padding: 10px 15px;
   border-radius: 10px;

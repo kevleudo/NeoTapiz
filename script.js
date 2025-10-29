@@ -1,3 +1,4 @@
+
 // Espera a que el DOM esté listo
 document.addEventListener('DOMContentLoaded', () => {
   // Escuchamos el clic del botón
