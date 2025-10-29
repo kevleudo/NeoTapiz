@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cotizaciones</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scrip.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+</head>
+
+<body>
+
+</body>
+<div class="tarjeta-principal-2">
+
+    <body class="body-cotizaciones">
+        <header class="pagina2">
+            <div class="logo">
+                <img src="img/logoo.png" alt="" class="logo-img">
+                <h4 class="nombre-empresa">NeoTapiz</h4>
+            </div>
+            <nav>
+
+                <ul>
+
+                    <a href="inicio.html" class="nav-links-2">Inicio</a>
+
+                    <a href="galeria-de-imagenes.html" class="nav-links-2">Galeria de imagenes</a>
+
+                </ul>
+            </nav>
+        </header>
+
+
+        <section>
+            <div class="uno">
+                <h2 class="unouno">Cotizaciones</h2>
+            </div><br><br>
+
+
+
+
+
+            <section class="cotizacion">
+                <h2>Cuestionario de Cotización</h2>
+
+                <form id="formCotizacion">
+
+                    <!-- CAMPO 1: Tipo de mueble -->
+                    <label for="tipoMueble">Tipo de mueble:</label>
+                    <select id="tipoMueble" name="tipoMueble" required>
+                        <option value="500000">sofá</option>
+                        <option value="150000">sillas</option>
+                        <option value="150000">espejos</option>
+                        <option value="400000">camas</option>
+                        <!-- 🔧 AGREGA AQUÍ TUS OPCIONES CON SUS PRECIOS BASE -->
+                        <!-- Ejemplo:
+        <option value="150000">Silla</option>
+        <option value="300000">Mesa</option>
+        <option value="500000">Sofá</option>
+        -->
+                    </select>
+
+                    <!-- CAMPO 2: Medidas -->
+                    <label for="medidas">Medidas:</label>
+                    <select id="medidas" name="medidas" required>
+                        <option value="0.5">pequeño</option>
+                        <option value="0.7">mediano</option>
+                        <option value="0.9">grande</option>
+                        <!-- 🔧 AGREGA AQUÍ TUS OPCIONES DE MEDIDAS CON MULTIPLICADORES -->
+                        <!-- Ejemplo:
+        <option value="1.0">Pequeño</option>
+        <option value="1.3">Mediano (+30%)</option>
+        <option value="1.6">Grande (+60%)</option>
+        -->
+                    </select>
+
+                    <!-- CAMPO 3: Material -->
+                    <label for="material">Material:</label>
+                    <select id="material" name="material" required>
+                        <option value="1.7">cuero</option>
+                        <option value="1.5">tela antirrasguño</option>
+                        <option value="1.3">tela</option>
+                        <option value="1.0">cuerina</option>
+
+                        <!-- 🔧 AGREGA AQUÍ TUS OPCIONES DE MATERIAL CON MULTIPLICADORES -->
+                        <!-- Ejemplo:
+        <option value="1.0">Madera básica</option>
+        <option value="1.2">Madera fina (+20%)</option>
+        <option value="1.5">Tapizado de lujo (+50%)</option>
+        -->
+                    </select>
+
+                    <!-- CAMPO 4: Envío -->
+                    <label>
+                        <input type="checkbox" id="envio"> ¿Deseas envío a domicilio?
+                    </label>
+                    <!-- 🔧 EL COSTO DE ENVÍO SE CONFIGURA EN EL JS -->
+
+                    <!-- BOTÓN DE CÁLCULO -->
+                    <button type="button" id="calcular">Calcular cotización</button>
+
+                    <!-- RESULTADO -->
+                    <div id="resultado">
+                        <h3>Total estimado:</h3>
+                        <p id="valorTotal">$0</p>
+                    </div>
+                </form>
+            </section>
+
+            
+            <br><br><br><br><br>
+            <section class="titulos">
+            <a href="#inicio">
+                <h2>Inicio</h2>
+            </a>
+            <a href="galeria-de-imagenes.html">
+                <h2>Galeria de imagenes</h2>
+            </a>
+            
+        </section>
+            
+            
+            <footer>
+                <p>&copy; todos los derechos reservados</p>
+                <div class="social-icons">
+                    <a href="" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    
+                </div>
+                
+                
+                
+                
+            </footer>
+           <script src="script.js"></script>
+
+        </body>
+</div>
+
+</html>

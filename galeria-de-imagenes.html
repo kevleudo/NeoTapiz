@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>galeria</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scrip.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+</head>
+
+<!DOCTYPE html>
+<html lang="es">
+
+<div class="tarjeta-principal-2">
+
+    <body class="body-galeria">
+        <header class="pagina2">
+            <div class="logo">
+                <img src="img/logoo.png" alt="" class="logo-img">
+                <h4 class="nombre-empresa">NeoTapiz</h4>
+            </div>
+            <nav>
+
+                <ul>
+
+                    <a href="inicio.html" class="nav-links-2">Inicio</a>
+
+                    <a href="cotizaciones.html" class="nav-links-2">Cotizaciones</a>
+
+                </ul>
+            </nav>
+        </header>
+
+
+        <section>
+            <div class="uno">
+                <h2 class="unouno">Galeria de imagenes</h2>
+            </div><br><br>
+
+            <div class="carrucel">
+                <div class="elementos-carrucel"><img src="/img/mueble1.jpeg" alt=""></div>
+                <div class="elementos-carrucel"><img src="/img/mueble2.jpeg" alt=""></div>
+                <div class="elementos-carrucel"><img src="/img/mueble3.jpeg" alt=""></div>
+                <div class="elementos-carrucel"><img src="/img/mueble4.jpeg" alt=""></div>
+                <div class="elementos-carrucel"><img src="/img/mueble5.jpeg" alt=""></div>
+                <div class="elementos-carrucel"><img src="/img/mueble6.jpeg" alt=""></div>
+                <div class="elementos-carrucel"><img src="/img/mueble7.jpeg" alt=""></div>
+                <div class="elementos-carrucel"><img src="/img/mueble8.jpeg" alt=""></div>
+                <div class="elementos-carrucel"><img src="/img/mueble9.jpeg" alt=""></div>
+                <div class="elementos-carrucel"><img src="/img/mueble10.jpeg" alt=""></div>
+                <div class="elementos-carrucel"><img src="/img/mueble11.jpeg" alt=""></div>
+                <div class="elementos-carrucel"><img src="/img/mueble12.jpeg" alt=""></div>
+                <div class="elementos-carrucel"><img src="/img/mueble13.jpeg" alt=""></div>
+                <div class="elementos-carrucel"><img src="/img/mueble14.jpeg" alt=""></div>
+                <div class="elementos-carrucel"><img src="/img/mueble15.jpeg" alt=""></div>
+                <div class="elementos-carrucel"><img src="/img/mueble16.jpeg" alt=""></div>
+                <div class="elementos-carrucel"><img src="/img/mueble17.jpeg" alt=""></div>
+                <div class="elementos-carrucel"><img src="/img/mueble18.jpeg" alt=""></div>
+                <div class="elementos-carrucel"><img src="/img/mueble19.jpeg" alt=""></div>
+                <div class="elementos-carrucel"><img src="/img/mueble20.jpeg" alt=""></div>
+                <div class="elementos-carrucel"><img src="/img/mueble21.jpeg" alt=""></div>
+                <div class="elementos-carrucel"><img src="/img/mueble22.jpeg" alt=""></div>
+                <div class="elementos-carrucel"><img src="/img/mueble23.jpeg" alt=""></div>
+                <div class="elementos-carrucel"><img src="/img/mueble24.jpeg" alt=""></div>
+                <div class="elementos-carrucel"><img src="/img/mueble25.jpeg" alt=""></div>
+                <div class="elementos-carrucel"><img src="/img/mueble26.jpeg" alt=""></div>
+                <div class="elementos-carrucel"><img src="/img/mueble27.jpeg" alt=""></div>
+                <div class="elementos-carrucel"><img src="/img/mueble28.jpeg" alt=""></div>
+                <div class="elementos-carrucel"><img src="/img/mueble29.jpeg" alt=""></div>
+                <div class="elementos-carrucel"><img src="/img/mueble30.jpeg" alt=""></div>
+                <div class="elementos-carrucel"><img src="/img/mueble31.jpeg" alt=""></div>
+                <div class="elementos-carrucel"><img src="/img/mueble32.jpeg" alt=""></div>
+                <div class="elementos-carrucel"><img src="/img/mueble33.jpeg" alt=""></div>
+                <div class="elementos-carrucel"><img src="/img/mueble34.jpeg" alt=""></div>
+                <div class="elementos-carrucel"><img src="/img/mueble35.jpeg" alt=""></div>
+
+
+
+            </div>
+            <div id="modal" class="modal">
+                <span id="cerrar">&times;</span>
+                <img id="imagen-grande" src="" alt="">
+            </div>
+
+        </section>
+
+        <section class="titulos">
+            <a href="inicio.html">
+                <h2>Inicio</h2>
+            </a>
+
+            <a href="cotizaciones.html">
+                <h2>Hacer una cotizacion</h2>
+            </a>
+        </section>
+
+
+
+
+        <hr>
+
+
+        <footer>
+            <p>&copy; todos los derechos reservados</p>
+            <div class="social-icons">
+                <a href="" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="" target="_blank"><i class="fab fa-whatsapp"></i></a>
+
+            </div>
+
+
+
+
+        </footer>
+        <script>
+  const modal = document.getElementById("modal");
+  const modalImg = document.getElementById("imagen-grande");
+  const cerrar = document.getElementById("cerrar");
+
+  // Al hacer clic en cualquier imagen del carrusel
+  document.querySelectorAll(".carrucel img").forEach(img => {
+    img.addEventListener("click", () => {
+      modal.style.display = "flex";
+      modalImg.src = img.src; // muestra la imagen clickeada
+    });
+  });
+
+  // Cerrar al hacer clic en la X
+  cerrar.addEventListener("click", () => {
+    modal.style.display = "none";
+  });
+
+  // Cerrar al hacer clic fuera de la imagen
+  modal.addEventListener("click", (e) => {
+    if (e.target === modal) {
+      modal.style.display = "none";
+    }
+  });
+</script>
+
+    </body>
+
+</div>
+
+</html>

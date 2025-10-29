@@ -1,0 +1,593 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    align-items: center;
+
+
+}
+
+body {
+    font-family: sans-serif;
+    background-color: rgb(235, 230, 222);
+
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    padding-right: 10px;
+    font-weight: 600;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    min-height: 70px;
+    margin: 0%;
+    align-items: center;
+
+
+
+
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 0px;
+    font-size: 15px;
+    margin-right: 0px;
+
+}
+
+@media(max-width: 1000px) {
+    .nav-links {
+
+        font-size: 12px;
+
+
+    }
+}
+
+@media(max-width: 800px) {
+    .nav-links {
+
+        font-size: 9px;
+
+
+    }
+}
+
+@media(max-width: 700px) {
+    .nav-links {
+        flex-direction: column;
+        font-size: 10px;
+
+
+    }
+}
+
+
+.logo {
+    display: flex;
+    align-items: center;
+
+}
+
+.logo img {
+
+    height: 50px
+}
+
+nav a:hover {
+    color: rgb(153, 126, 71);
+
+}
+
+@media(max-width: 700px) {
+    header {
+        flex-direction: column;
+        font-size: 10px;
+    }
+
+    nav {
+        margin-top: 10px;
+
+    }
+}
+
+@media(max-width: 600px) {
+    header {
+        flex-direction: column;
+        font-size: 8px;
+    }
+
+    nav {}
+}
+
+.tarjeta-principal {
+    background-color: white;
+    width: 70%;
+    margin: auto;
+    margin-top: 20px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+img {
+    border-radius: 10px
+}
+
+.mapa {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.quienes-somos {
+    margin-bottom: 30%;
+    margin-left: 30%;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    gap: 30px;
+    justify-content: center;
+
+}
+
+
+.contenedor-quienes-somos {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: justify;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.img-quienes-somos {
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+
+
+}
+
+.texto-quienes-somos {
+    flex: 1;
+    font-size: 14px;
+    line-height: 1.5;
+
+
+}
+.mapa {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    gap: 30px;
+}
+
+h2 {
+    text-align: center;
+
+}
+
+.imagenes-servicios {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 10%;
+    margin-right: 10%;
+
+
+
+}
+
+.img-servicios {
+
+    width: 100%;
+    
+
+}
+
+
+
+
+
+@media screen and (max-width: 400px) {
+    body {
+        font-size: 10px;
+
+    }
+
+
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        font-size: 13px;
+
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+    body {
+        font-size: 15px;
+
+    }
+
+}
+
+figcaption {
+    text-align: center;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.servicios {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+
+
+
+
+
+
+.ubicacion {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.mapa-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; 
+  height: 0;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+}
+
+.mapa-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* 🔹 Contenedor general: agrupa la imagen, la frase y la tarjeta */
+.contenedor-imagen {
+  position: relative;     /* Permite colocar elementos encima de la imagen */
+  display: inline-block;
+  width: 100%;            /* Ocupa todo el ancho disponible */
+  max-width: 100%;       /* Tamaño máximo (puedes ajustarlo) */
+  overflow: hidden;       /* Evita que los textos se salgan del borde */
+  border-radius: 12px;    /* Bordes redondeados opcionales */
+}
+
+/* 🔹 Imagen base */
+.contenedor-imagen img {
+  width: 100%;            /* Imagen se adapta al contenedor */
+  height: auto;           /* Mantiene la proporción original */
+  display: block;
+  border-radius: 12px;
+}
+
+/* 🔹 Frase principal dentro de la imagen */
+.frase {
+  position: absolute;
+  top: 20%;               /* Distancia desde arriba */
+  left: 5%;               /* 🔹 Alineada al costado izquierdo */
+  color: white;
+  width: 30%;             /* Espacio máximo dentro de la imagen */
+  font-size: 2vw;         /* 🔹 Tamaño del texto relativo al ancho de la pantalla */
+  font-weight: bold;
+  text-align: left;       /* 🔹 Texto alineado a la izquierda */
+  text-shadow: 0 2px 5px rgba(0,0,0,0.6); /* Sombra para legibilidad */
+  line-height: 1.2;
+}
+
+/* 🔹 Tarjeta pequeña debajo de la frase */
+.tarjeta {
+  position: absolute;
+  top: 55%;               /* 🔹 Debajo de la frase */
+  left: 5%;               /* 🔹 Alineada con el texto */
+  bakground-color: rgba(0, 0, 0, 0.6); /* Fondo oscuro semitransparente */
+  color: white;
+  padding: 10px 15px;
+  border-radius: 10px;
+  font-size: 1.4vw;       /* 🔹 Tamaño de texto adaptable */
+  text-align: left;
+  width: 20%;             /* 🔹 No ocupa todo el ancho, mantiene proporción */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  backdrop-filter: blur(4px); /* Efecto de vidrio borroso */
+  transition: all 0.3s ease;
+}
+
+/* 🔹 Ajustes para pantallas pequeñas */
+@media (max-width: 700px) {
+
+}
+  .frase {
+    top: 15%;
+    left: 5%;
+   
+            
+  }
+
+  .tarjeta {
+    top: 50%;
+    left: 5%;
+    width: 25%;         /* Más ancha en celulares */
+    font-size: 3.5vw;
+    padding: 5px 8px;
+   
+   
+   
+  }
+/* footer*/
+
+footer {
+  background-color: #807272;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+footer p {
+  margin: 10px 0;
+}
+
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons a {
+   color: #fff;
+  margin: 0 10px;
+  font-size: 1.5em;
+  transition: color 0.3s ease;
+  
+}
+
+.social-icons a:hover {
+  color: #999;
+}
+
+.enlaces-rapidos  {
+  display: flex;
+  margin: 0 10px;
+  color: #fff;
+  text-decoration: none;
+  font-size: rem;
+}
+
+/* ===== Contenedor principal ===== */
+.titulos {
+  display: flex;              /* Usa Flexbox para alinear los elementos en fila */
+  justify-content: center;    /* Centra los títulos horizontalmente */
+  align-items: center;        /* Centra los títulos verticalmente si hay altura */
+  gap: 30px;                  /* Espacio entre los títulos */
+  flex-wrap: wrap;            /* Permite que los títulos bajen a la siguiente línea si no caben */
+  text-align: center;         /* Centra el texto dentro de cada título */
+  margin: 40px 0;             /* Espacio arriba y abajo de todo el bloque */
+}
+
+/* ===== Estilos de los títulos ===== */
+.titulos h2 {
+  color: #814545;                /* Color blanco (para fondo oscuro) */
+  font-size: 1.0rem;          /* Tamaño de letra */
+  font-family: 'Poppins', sans-serif; /* Fuente moderna y elegante */
+  transition: transform 0.3s ease;    /* Suaviza la animación al pasar el mouse */
+}
+
+/* ===== Efecto al pasar el mouse ===== */
+.titulos h2:hover {
+  transform: scale(1.05);     /* Hace que el título crezca un poco al pasar el mouse */
+  cursor: pointer;            /* Cambia el cursor para indicar que se puede hacer clic */
+}
+
+/* ===== Responsividad: pantallas medianas ===== */
+@media (max-width: 900px) {
+  .titulos {
+    gap: 20px;                /* Reduce el espacio entre los títulos */
+  }
+
+  .titulos h2 {
+    font-size: 0.8rem;        /* Reduce un poco el tamaño del texto */
+  }
+}
+
+/* ===== Responsividad: pantallas pequeñas (celulares) ===== */
+@media (max-width: 600px) {
+  .titulos {
+    flex-direction: column;   /* Coloca los títulos uno debajo del otro */
+    gap: 10px;                /* Espacio más pequeño entre ellos */
+  }
+
+  .titulos h2 {
+    font-size: 0.9rem;        /* Tamaño de texto más pequeño para móviles */
+  }
+}
+
+
+/* galeria de imagenes*/
+.body-galeria {
+background-image:url(img/tapicer.webp) ;
+background-size:cover ;
+background-repeat: no-repeat;
+    
+    
+}
+.unouno{
+  margin-top: 150px;
+  color:#807272;
+
+}
+
+.carrucel {
+  width: 100%;
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 15px; /* separa las imágenes */
+  padding: 20px;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+.elementos-carrucel {
+  flex: 0 0 auto; /* evita que se deformen */
+  width: 300px; /* tamaño base */
+  border-radius: 10px;
+  overflow: hidden;
+  scroll-snap-align: center;
+  background-color: transparent; /* quitamos el fondo azul */
+}
+
+.elementos-carrucel img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 10px;
+}
+
+/* --- RESPONSIVIDAD --- */
+@media (max-width: 768px) {
+  .elementos-carrucel {
+    width: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .elementos-carrucel {
+    width: 150px;
+  }
+}
+
+.tarjeta-principal-2 {
+    background-color: white;
+    width: 70%;
+    margin: auto;
+    margin-top: 20px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+.pagina2{
+  background-color:   #807272;
+}
+.nav-links-2{
+  color: black;
+}
+.nav-links-2:hover {
+    color: white
+}
+
+.modal {
+  display: none; /* Oculto por defecto */
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9); /* fondo oscuro */
+  justify-content: center;
+  align-items: center;
+}
+
+.modal img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+}
+
+#cerrar {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  font-size: 40px;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#cerrar:hover {
+  color: red;
+}
+
+.body-cotizaciones {
+  font-family: Arial, sans-serif;
+  background-color: #ddd4d4; /* Fondo oscuro */
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.cotizacion {
+  background-color: #1e1e1e;
+  padding: 30px;
+  border-radius: 15px;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 0 10px rgba(255,255,255,0.1);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+select, input {
+  padding: 8px;
+  border-radius: 8px;
+  border: none;
+  width: 100%;
+}
+
+button {
+  background-color: white;
+  color: black;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #ddd;
+}
+
+#resultado {
+  margin-top: 20px;
+  text-align: center;
+  background-color: #222;
+  padding: 10px;
+  border-radius: 10px;
+}
